@@ -1,0 +1,22 @@
+{
+  "name"         : "web-server",
+  "version"      : "0.0.1",
+  "description"  : "Web Server for Node.JS",
+  "preferGlobal" : true,
+  "keywords"     : [ "server", "webserver", "web-server", "web server", "http", "httpserver", "http-server", "http server" ],
+  "homepage"     : "http://github.com/tomyan/node-web-server",
+  "bugs"         : "http://github.com/tomyan/node-web-server/issues",
+  "author": {
+    "name"  : "Tom Yandell",
+    "email" : "tom.deletethis@yandell.me.uk",
+    "url"   : "http://tom.yandell.me.uk/blog"
+  },
+  "main"        : "./lib/node-web-server.js",
+  "bin"         : { "node-web-server" : "./bin/node-web-server" },
+  "directories" : { "lib" : "./lib" },
+  "man"         : "./man/doc.1",
+  "repository" : {
+    "type" : "git",
+    "url"  : "https://github.com/tomyan/node-web-server"
+  }
+}

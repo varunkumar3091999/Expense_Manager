@@ -1,14 +1,14 @@
-import Home from './Home'
-import Add from './Add'
-import Edit from './Edit'
+import ExpenseDashboardPage from './ExpenseDashboardPage'
+import AddExpensePage from './AddExpensePage'
+import EditExpensePage from './EditExpensePage'
 import Help from './Help'
 import PageNotFound from './PageNotFound'
 import Header from './Header'
 
 export {
-  Home,
-  Add,
-  Edit,
+  ExpenseDashboardPage,
+  AddExpensePage,
+  EditExpensePage,
   Help,
   PageNotFound,
   Header

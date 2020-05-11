@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 404 page correctly 1`] = `
+<div>
+  this is a 404 component
+  <Link
+    to="/"
+  >
+    go home
+  </Link>
+</div>
+`;

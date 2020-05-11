@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 
 const Header = () => (
   <header>
-    <h1>expencify</h1>
+    <h1>Expensify</h1>
     <NavLink
       to='/'
       activeClassName='is-active'
       exact
     >
-      Home
+      Dashboard
     </NavLink>
     <NavLink
       to='/create'
@@ -18,20 +18,13 @@ const Header = () => (
     >
       Add Expense
     </NavLink>
-    <NavLink
-      to='/edit/:id'
-      activeClassName='is-active'
-      exact
-    >
-      Edit Expense
-    </NavLink>
-    <NavLink
+    {/* <NavLink
       to='/help'
       activeClassName='is-active'
       exact
     >
       Help
-    </NavLink>
+    </NavLink> */}
   </header>
 )
 

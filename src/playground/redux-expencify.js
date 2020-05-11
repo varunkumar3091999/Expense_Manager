@@ -22,9 +22,10 @@ const addExpense = (     // params
 // Remove Expensess
 const removeExpense = ({ id } = {}) => ({
   type: 'REMOVE_EXPENSE',
-  expense: {
-    id
-  }
+  // expense: {
+  //   id
+  // }
+  id
 })
 
 //Edit Expense
@@ -163,13 +164,13 @@ const store = createStore(
 store.subscribe(() => {
   const state = store.getState();
   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
-  console.log(visibleExpenses)
+  console.log(state.expenses)
 })
 
 const expenseOne = store.dispatch(addExpense({ description: 'rent', amount: 100, createdAt: 11000 }))
 const expenseTwo = store.dispatch(addExpense({ description: 'food', amount: 60, createdAt: -1000 }))
 
-// store.dispatch(removeExpense({ id: expenseOne.expense.id }))
+store.dispatch(removeExpense({ id: expenseOne.expense.id }))
 
 // store.dispatch(editExpense(expenseOne.expense.id, { amount: 1000 }))
 
@@ -177,7 +178,7 @@ const expenseTwo = store.dispatch(addExpense({ description: 'food', amount: 60, 
 
 
 // store.dispatch(sortByDate())
-store.dispatch(sortByAmount())
+// store.dispatch(sortByAmount())
 
 // store.dispatch(setStartDate(100))
 // store.dispatch(setStartDate())

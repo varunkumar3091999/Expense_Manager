@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 import {
-  Home,
-  Add,
-  Edit,
+  ExpenseDashboardPage,
+  AddExpensePage,
+  EditExpensePage,
   Help,
   PageNotFound,
   Header
@@ -21,17 +21,17 @@ const AppRouter = () => (
         <Route
           exact
           path='/'
-          component={Home}
+          component={ExpenseDashboardPage}
         />
         <Route
           exact
           path='/create'
-          component={Add}
+          component={AddExpensePage}
         />
         <Route
           exact
           path='/edit/:id'
-          component={Edit}
+          component={EditExpensePage}
         />
         <Route
           exact

@@ -1,6 +1,6 @@
 {
   "name": "expensif",
-  "version": "1.0.0 --env production",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "VarunKumar",
   "license": "MIT",
